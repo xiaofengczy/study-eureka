@@ -15,5 +15,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface EurekaFeignclientService {
 
   @GetMapping("/hi")
-  String sayHello(@RequestParam String name);
+  String sayHello(@RequestParam("name") String name);
 }
